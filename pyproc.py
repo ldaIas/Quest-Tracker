@@ -10,7 +10,10 @@ import json
 
 region_url = "https://na1.api.riotgames.com/"
 name_get = "lol/summoner/v4/summoners/by-name/"
-api_key = "?api_key=RGAPI-33b9272b-52ea-4be8-9d03-f12136f47baf"
+api_url = "?api_key="
+api_inp = input("Enter the api:\n")
+api_key = api_url + api_inp
+
 summoner_name = input("Enter your summoner name:\n")
 
 validName = False
