@@ -2,7 +2,7 @@
 """
 Created on Sat Jul 18 23:27:34 2020
 
-@author: Admin
+@author: nuttyguy360
 """
 import os.path as op
 import requests
@@ -81,7 +81,7 @@ print('Note: Do the API limitiations, this app can currently only process',
 region_url = 'https://na1.api.riotgames.com/'
 name_get = "lol/summoner/v4/summoners/by-name/"
 api_url = "?api_key="
-api_inp = 'RGAPI-97dfa0b8-530c-406e-844a-0b8b1dcb48ec'# input("Enter the api key:\n")
+api_inp =  input("Enter the api key:\n")
 api_key = api_url + api_inp
 
 summoner_name = find_summoner()
