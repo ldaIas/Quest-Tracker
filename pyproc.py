@@ -188,7 +188,7 @@ for game in matchlist_df['gameId']:
   
   if(validate_game(match_json) != True):
       num_game += 1
-      print('Total takedowns so far: %d/350' % (total_takedown), flush=True)
+      print('Total takedowns so far: %d/350' % (total_takedown))
       continue
 
   partDto_df = pd.DataFrame(match_json['participants'])
@@ -206,7 +206,7 @@ for game in matchlist_df['gameId']:
   participant = partDto_df[partDto_df['participantId'] == partId]
   #print(participant.to_string())
   total_takedown += count_match(participant)
-  print('Total takedowns so far: %d/350' % (total_takedown), flush=True)
+  print('Total takedowns so far: %d/350' % (total_takedown))
   if(total_takedown >= 350):
       break
   num_game += 1
